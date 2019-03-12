@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule Map View Controller-->
+        <scene sceneID="oqV-Up-Jgu">
+            <objects>
+                <viewController storyboardIdentifier="LFScheduleMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y0e-RH-1MT" customClass="LFScheduleMapViewController" customModule="Luftree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vP1-kh-ItV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x6A-TE-jEv">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y0e-RH-1MT" id="pJD-Qg-Lam"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x6A-TE-jEv" firstAttribute="bottom" secondItem="bmP-tE-mi2" secondAttribute="bottom" id="eeI-2y-pkc"/>
+                            <constraint firstItem="x6A-TE-jEv" firstAttribute="top" secondItem="bmP-tE-mi2" secondAttribute="top" id="nIS-aT-97S"/>
+                            <constraint firstItem="x6A-TE-jEv" firstAttribute="leading" secondItem="bmP-tE-mi2" secondAttribute="leading" id="qNY-BE-RiB"/>
+                            <constraint firstItem="x6A-TE-jEv" firstAttribute="trailing" secondItem="bmP-tE-mi2" secondAttribute="trailing" id="zwt-6M-tWi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bmP-tE-mi2"/>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleMapView" destination="x6A-TE-jEv" id="koa-8f-J0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6io-y9-zmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325.5999999999999" y="-112.3152709359606"/>
+        </scene>
+    </scenes>
+</document>

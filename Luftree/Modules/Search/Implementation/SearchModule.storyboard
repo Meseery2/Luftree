@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WfZ-fS-5gQ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="3V0-dU-1MP">
+            <objects>
+                <viewController storyboardIdentifier="LFSearchViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WfZ-fS-5gQ" customClass="LFSearchViewController" customModule="Luftree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jcl-dt-RCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rJh-wV-MlR" customClass="SearchTextField" customModule="SearchTextField">
+                                <rect key="frame" x="18" y="159" width="340" height="50"/>
+                                <color key="backgroundColor" red="0.78833216428756714" green="0.78026300668716431" blue="0.78836905956268311" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XRh-Km-n5d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" textContentType="address-level2"/>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="WfZ-fS-5gQ" eventType="editingChanged" id="FK3-zI-Xwl"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-fx-STc" customClass="SearchTextField" customModule="SearchTextField">
+                                <rect key="frame" x="18" y="221" width="340" height="50"/>
+                                <color key="backgroundColor" red="0.78833216428756714" green="0.78026300668716431" blue="0.78836905956268311" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Fy-BQ-Oyb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" textContentType="address-level2"/>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="WfZ-fS-5gQ" eventType="editingChanged" id="evN-1J-gMT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I28-ml-jPE">
+                                <rect key="frame" x="18" y="446" width="340" height="50"/>
+                                <color key="backgroundColor" red="0.94217103719711304" green="0.44198065996170044" blue="0.25868576765060425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OlQ-l4-eRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Search Flights">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSearch:" destination="WfZ-fS-5gQ" eventType="touchUpInside" id="kjO-t6-MHA"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="Cd9-d5-Lmn">
+                                <rect key="frame" x="18" y="283" width="340" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="lUQ-bA-VHB"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="573382495.19203997">
+                                    <!--2019-03-04 08:54:55 +0000-->
+                                </date>
+                            </datePicker>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cgA-JS-ftM">
+                                <rect key="frame" x="128.66666666666666" y="395" width="51" height="31"/>
+                                <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" red="0.96773213148117065" green="0.65458774566650391" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direct Flight:" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho9-8f-jSQ">
+                                <rect key="frame" x="18.000000000000007" y="398" width="103.66666666666669" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luftree" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-wp-tfc">
+                                <rect key="frame" x="150" y="62" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="3xY-cV-zH6"/>
+                                    <constraint firstAttribute="height" constant="75" id="TVo-rH-7Ri"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TdL-fx-STc" firstAttribute="leading" secondItem="rJh-wV-MlR" secondAttribute="leading" id="2Bb-Ft-8Kt"/>
+                            <constraint firstItem="cgA-JS-ftM" firstAttribute="leading" secondItem="Ho9-8f-jSQ" secondAttribute="trailing" constant="7" id="9md-u8-ZBx"/>
+                            <constraint firstItem="I28-ml-jPE" firstAttribute="trailing" secondItem="Cd9-d5-Lmn" secondAttribute="trailing" id="DrJ-Kt-yaP"/>
+                            <constraint firstItem="TdL-fx-STc" firstAttribute="trailing" secondItem="rJh-wV-MlR" secondAttribute="trailing" id="Eci-eP-Rem"/>
+                            <constraint firstItem="I28-ml-jPE" firstAttribute="leading" secondItem="Cd9-d5-Lmn" secondAttribute="leading" id="GUz-49-RFZ"/>
+                            <constraint firstItem="I28-ml-jPE" firstAttribute="top" secondItem="cgA-JS-ftM" secondAttribute="bottom" constant="20" id="Nd5-6h-oEy"/>
+                            <constraint firstItem="Cd9-d5-Lmn" firstAttribute="top" secondItem="TdL-fx-STc" secondAttribute="bottom" constant="12" id="OWm-f6-2cZ"/>
+                            <constraint firstItem="wZa-wp-tfc" firstAttribute="top" secondItem="Jcl-dt-RCc" secondAttribute="top" constant="62" id="aUY-v6-gJy"/>
+                            <constraint firstItem="Ho9-8f-jSQ" firstAttribute="leading" secondItem="Cd9-d5-Lmn" secondAttribute="leading" id="jNZ-Yk-93o"/>
+                            <constraint firstItem="Ho9-8f-jSQ" firstAttribute="centerY" secondItem="cgA-JS-ftM" secondAttribute="centerY" id="jae-aq-QCN"/>
+                            <constraint firstItem="rJh-wV-MlR" firstAttribute="top" secondItem="wZa-wp-tfc" secondAttribute="bottom" constant="22" id="nKu-w0-1vj"/>
+                            <constraint firstItem="rJh-wV-MlR" firstAttribute="leading" secondItem="dj7-vK-Sgd" secondAttribute="leading" constant="18" id="pwK-JL-fuy"/>
+                            <constraint firstItem="wZa-wp-tfc" firstAttribute="centerX" secondItem="Jcl-dt-RCc" secondAttribute="centerX" id="qOA-wY-KPt"/>
+                            <constraint firstItem="dj7-vK-Sgd" firstAttribute="trailing" secondItem="rJh-wV-MlR" secondAttribute="trailing" constant="17" id="qpG-52-z2x"/>
+                            <constraint firstItem="Cd9-d5-Lmn" firstAttribute="trailing" secondItem="TdL-fx-STc" secondAttribute="trailing" id="qyX-RA-AJl"/>
+                            <constraint firstItem="Cd9-d5-Lmn" firstAttribute="leading" secondItem="TdL-fx-STc" secondAttribute="leading" id="rzR-8K-RQh"/>
+                            <constraint firstItem="cgA-JS-ftM" firstAttribute="top" secondItem="Cd9-d5-Lmn" secondAttribute="bottom" constant="12" id="xvZ-l1-yEr"/>
+                            <constraint firstItem="TdL-fx-STc" firstAttribute="top" secondItem="rJh-wV-MlR" secondAttribute="bottom" constant="12" id="zM0-jQ-BnE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dj7-vK-Sgd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0HP-Ac-t4q"/>
+                    <connections>
+                        <outlet property="datePicker" destination="Cd9-d5-Lmn" id="GMN-s7-DN5"/>
+                        <outlet property="destinationTextField" destination="TdL-fx-STc" id="Upt-oO-h7W"/>
+                        <outlet property="isDirectFlightSwitch" destination="cgA-JS-ftM" id="New-iC-O4P"/>
+                        <outlet property="originTextField" destination="rJh-wV-MlR" id="1oL-0l-9e9"/>
+                        <outlet property="searchButton" destination="I28-ml-jPE" id="LE0-OI-UMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dm-jD-XiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="-112.3152709359606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="luftree" width="1280" height="1280"/>
+    </resources>
+</document>

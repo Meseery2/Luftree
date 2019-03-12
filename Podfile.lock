@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Nimble (7.3.4)
+  - Quick (1.3.4)
+  - SearchTextField (1.2.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Nimble
+  - Quick
+  - SearchTextField
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Nimble
+    - Quick
+    - SearchTextField
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
+
+PODFILE CHECKSUM: 6db425051958f10e983d19e7df7fa67030efd278
+
+COCOAPODS: 1.5.3

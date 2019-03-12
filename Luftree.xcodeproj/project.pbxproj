@@ -1,0 +1,1229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E871612424203C2746E3EF /* Pods_LuftreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F54D4DB98DA308D73A96C5 /* Pods_LuftreeTests.framework */; };
+		45E09129C7CE3B42C0569F11 /* Pods_Luftree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A54E07D815EF2C20ACD64 /* Pods_Luftree.framework */; };
+		A21939DA2233EF200060A870 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = A21939D92233EF200060A870 /* airports.json */; };
+		A21939DC22342D2D0060A870 /* UINib+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939DB22342D2D0060A870 /* UINib+Extensions.swift */; };
+		A21939DE2234308E0060A870 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939DD2234308E0060A870 /* CardView.swift */; };
+		A21939E0223433FE0060A870 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939DF223433FE0060A870 /* ViewIdentifiable.swift */; };
+		A21939E9223436830060A870 /* LFScheduleMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939E5223436830060A870 /* LFScheduleMapRouter.swift */; };
+		A21939EA223436830060A870 /* LFScheduleMapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939E6223436830060A870 /* LFScheduleMapBuilder.swift */; };
+		A21939EB223436830060A870 /* LFScheduleMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939E7223436830060A870 /* LFScheduleMapPresenter.swift */; };
+		A21939EC223436830060A870 /* LFScheduleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939E8223436830060A870 /* LFScheduleMapViewController.swift */; };
+		A21939F0223436900060A870 /* ScheduleMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939ED2234368F0060A870 /* ScheduleMapPresenter.swift */; };
+		A21939F1223436900060A870 /* ScheduleMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939EE223436900060A870 /* ScheduleMapRouter.swift */; };
+		A21939F2223436900060A870 /* ScheduleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939EF223436900060A870 /* ScheduleMapViewController.swift */; };
+		A21939F622343A8C0060A870 /* ScheduleMapModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21939F522343A8C0060A870 /* ScheduleMapModule.storyboard */; };
+		A21939FB22343C350060A870 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939F922343C350060A870 /* Animator.swift */; };
+		A21939FC22343C350060A870 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939FA22343C350060A870 /* Animations.swift */; };
+		A2906C442235D4C800E5A718 /* LFNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C432235D4C800E5A718 /* LFNetworkError.swift */; };
+		A2906C462235D51D00E5A718 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C452235D51D00E5A718 /* Schedule.swift */; };
+		A2906C482235D52500E5A718 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C472235D52500E5A718 /* Flight.swift */; };
+		A2906C4A2235D53000E5A718 /* TotalJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C492235D53000E5A718 /* TotalJourney.swift */; };
+		A2906C4C2235D5A100E5A718 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C4B2235D5A100E5A718 /* Departure.swift */; };
+		A2906C4E2235D5AE00E5A718 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C4D2235D5AE00E5A718 /* Arrival.swift */; };
+		A2906C502235D60000E5A718 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C4F2235D60000E5A718 /* Terminal.swift */; };
+		A2906C522235DB3800E5A718 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C512235DB3800E5A718 /* UITextField+Extensions.swift */; };
+		A2906C5B2237357700E5A718 /* LFTokenServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C5A2237357700E5A718 /* LFTokenServiceSpec.swift */; };
+		A2906C5D22373C3F00E5A718 /* LFLocalDataServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C5C22373C3F00E5A718 /* LFLocalDataServiceSpec.swift */; };
+		A2906C622237421E00E5A718 /* LFSearchModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C612237421E00E5A718 /* LFSearchModuleBuilderSpec.swift */; };
+		A2906C642237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C632237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift */; };
+		A2906C662237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C652237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift */; };
+		A2B04AEB223310CD005364A1 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04AEA223310CD005364A1 /* UserDefaults+Extensions.swift */; };
+		A2B611622232A3510056FC4F /* LFTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B611612232A3510056FC4F /* LFTokenService.swift */; };
+		A2B611642232B3440056FC4F /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B611632232B3440056FC4F /* Dictionary+Extensions.swift */; };
+		A2C17DD9222B127700435469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17DD8222B127700435469 /* AppDelegate.swift */; };
+		A2C17DE0222B127800435469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C17DDF222B127800435469 /* Assets.xcassets */; };
+		A2C17DE3222B127800435469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C17DE1222B127800435469 /* LaunchScreen.storyboard */; };
+		A2C17DF9222B127800435469 /* LuftreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17DF8222B127800435469 /* LuftreeUITests.swift */; };
+		A2C17E13222B146500435469 /* LFNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E12222B146500435469 /* LFNetworkService.swift */; };
+		A2C17E16222B152200435469 /* LFAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E15222B152200435469 /* LFAirport.swift */; };
+		A2C17E1A222B158200435469 /* LFLocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E19222B158200435469 /* LFLocalDataService.swift */; };
+		A2C17E1C222B204300435469 /* LFRemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E1B222B204300435469 /* LFRemoteDataService.swift */; };
+		A2C17E1F222B236000435469 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E1E222B236000435469 /* EndpointType.swift */; };
+		A2C17E21222B245E00435469 /* LFAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E20222B245E00435469 /* LFAPIConstants.swift */; };
+		A2C17E23222B25D400435469 /* LFEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E22222B25D400435469 /* LFEndpoint.swift */; };
+		A2C17E25222B368700435469 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E24222B368700435469 /* Date+Extensions.swift */; };
+		A2C17E27222B48B400435469 /* LFScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E26222B48B400435469 /* LFScheduleResponse.swift */; };
+		A2C17E29222B4DB400435469 /* LFToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C17E28222B4DB400435469 /* LFToken.swift */; };
+		A2FDE602222C753B0014665B /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE601222C753B0014665B /* NetworkServiceType.swift */; };
+		A2FDE62B222C7FF00014665B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE627222C7FF00014665B /* SearchViewController.swift */; };
+		A2FDE62C222C7FF00014665B /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE628222C7FF00014665B /* SearchPresenter.swift */; };
+		A2FDE62D222C7FF00014665B /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE629222C7FF00014665B /* SearchInteractor.swift */; };
+		A2FDE62E222C7FF00014665B /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE62A222C7FF00014665B /* SearchRouter.swift */; };
+		A2FDE634222C7FF80014665B /* LFSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE62F222C7FF80014665B /* LFSearchRouter.swift */; };
+		A2FDE635222C7FF80014665B /* LFSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE630222C7FF80014665B /* LFSearchInteractor.swift */; };
+		A2FDE636222C7FF80014665B /* LFSearchModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE631222C7FF80014665B /* LFSearchModuleBuilder.swift */; };
+		A2FDE637222C7FF80014665B /* LFSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE632222C7FF80014665B /* LFSearchPresenter.swift */; };
+		A2FDE638222C7FF80014665B /* LFSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE633222C7FF80014665B /* LFSearchViewController.swift */; };
+		A2FDE645222C85F70014665B /* LFSchedulesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE640222C85F70014665B /* LFSchedulesListViewController.swift */; };
+		A2FDE646222C85F70014665B /* LFSchedulesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE641222C85F70014665B /* LFSchedulesListPresenter.swift */; };
+		A2FDE647222C85F70014665B /* LFSchedulesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE642222C85F70014665B /* LFSchedulesModuleBuilder.swift */; };
+		A2FDE648222C85F70014665B /* LFSchedulesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE643222C85F70014665B /* LFSchedulesListRouter.swift */; };
+		A2FDE64E222C86180014665B /* SchedulesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE64A222C86170014665B /* SchedulesPresenter.swift */; };
+		A2FDE64F222C86180014665B /* SchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE64B222C86170014665B /* SchedulesView.swift */; };
+		A2FDE650222C86180014665B /* SchedulesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE64C222C86170014665B /* SchedulesRouter.swift */; };
+		A2FDE657222C95180014665B /* LFScheduleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE655222C95180014665B /* LFScheduleListCell.swift */; };
+		A2FDE658222C95180014665B /* LFScheduleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FDE656222C95180014665B /* LFScheduleListCell.xib */; };
+		A2FDE65A222C9C9B0014665B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE659222C9C9B0014665B /* String+Extensions.swift */; };
+		A2FDE65D222CA4980014665B /* LFScheduleViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE65C222CA4980014665B /* LFScheduleViewConstants.swift */; };
+		A2FDE661222D35E00014665B /* SearchableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE660222D35E00014665B /* SearchableItem.swift */; };
+		A2FDE664222D3C6D0014665B /* LFAppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE663222D3C6D0014665B /* LFAppCordinator.swift */; };
+		A2FDE666222D421D0014665B /* SearchModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FDE665222D421D0014665B /* SearchModule.storyboard */; };
+		A2FDE669222D44A10014665B /* UIstoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE668222D44A10014665B /* UIstoryboard+Extensions.swift */; };
+		A2FDE66B222D44D20014665B /* SchedulesListModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FDE66A222D44D20014665B /* SchedulesListModule.storyboard */; };
+		A2FDE66D222D648F0014665B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE66C222D648F0014665B /* UIViewController+Extensions.swift */; };
+		A2FDE66F222D66790014665B /* ErrorViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE66E222D66790014665B /* ErrorViewLoadable.swift */; };
+		A2FDE672222D74FD0014665B /* UIButton+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDE671222D74FD0014665B /* UIButton+Activity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2C17DEA222B127800435469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2C17DCD222B127700435469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2C17DD4222B127700435469;
+			remoteInfo = Luftree;
+		};
+		A2C17DF5222B127800435469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2C17DCD222B127700435469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2C17DD4222B127700435469;
+			remoteInfo = Luftree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25DF55FFA1F00B4C28D3F17F /* Pods-LuftreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuftreeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuftreeTests/Pods-LuftreeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A21939D92233EF200060A870 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		A21939DB22342D2D0060A870 /* UINib+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Extensions.swift"; sourceTree = "<group>"; };
+		A21939DD2234308E0060A870 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A21939DF223433FE0060A870 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
+		A21939E5223436830060A870 /* LFScheduleMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleMapRouter.swift; sourceTree = "<group>"; };
+		A21939E6223436830060A870 /* LFScheduleMapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleMapBuilder.swift; sourceTree = "<group>"; };
+		A21939E7223436830060A870 /* LFScheduleMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleMapPresenter.swift; sourceTree = "<group>"; };
+		A21939E8223436830060A870 /* LFScheduleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleMapViewController.swift; sourceTree = "<group>"; };
+		A21939ED2234368F0060A870 /* ScheduleMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMapPresenter.swift; sourceTree = "<group>"; };
+		A21939EE223436900060A870 /* ScheduleMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMapRouter.swift; sourceTree = "<group>"; };
+		A21939EF223436900060A870 /* ScheduleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMapViewController.swift; sourceTree = "<group>"; };
+		A21939F522343A8C0060A870 /* ScheduleMapModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleMapModule.storyboard; sourceTree = "<group>"; };
+		A21939F922343C350060A870 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		A21939FA22343C350060A870 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		A2906C432235D4C800E5A718 /* LFNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFNetworkError.swift; sourceTree = "<group>"; };
+		A2906C452235D51D00E5A718 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A2906C472235D52500E5A718 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		A2906C492235D53000E5A718 /* TotalJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalJourney.swift; sourceTree = "<group>"; };
+		A2906C4B2235D5A100E5A718 /* Departure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		A2906C4D2235D5AE00E5A718 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		A2906C4F2235D60000E5A718 /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		A2906C512235DB3800E5A718 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		A2906C5A2237357700E5A718 /* LFTokenServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFTokenServiceSpec.swift; sourceTree = "<group>"; };
+		A2906C5C22373C3F00E5A718 /* LFLocalDataServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFLocalDataServiceSpec.swift; sourceTree = "<group>"; };
+		A2906C612237421E00E5A718 /* LFSearchModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchModuleBuilderSpec.swift; sourceTree = "<group>"; };
+		A2906C632237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSchedulesModuleBuilderSpec.swift; sourceTree = "<group>"; };
+		A2906C652237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleMapModuleBuilderSpec.swift; sourceTree = "<group>"; };
+		A2B04AEA223310CD005364A1 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		A2B611612232A3510056FC4F /* LFTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFTokenService.swift; sourceTree = "<group>"; };
+		A2B611632232B3440056FC4F /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		A2C17DD5222B127700435469 /* Luftree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luftree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C17DD8222B127700435469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2C17DDF222B127800435469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2C17DE2222B127800435469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2C17DE4222B127800435469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C17DE9222B127800435469 /* LuftreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C17DEF222B127800435469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C17DF4222B127800435469 /* LuftreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C17DF8222B127800435469 /* LuftreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftreeUITests.swift; sourceTree = "<group>"; };
+		A2C17DFA222B127800435469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C17E12222B146500435469 /* LFNetworkService.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LFNetworkService.swift; sourceTree = "<group>"; };
+		A2C17E15222B152200435469 /* LFAirport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFAirport.swift; sourceTree = "<group>"; };
+		A2C17E19222B158200435469 /* LFLocalDataService.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LFLocalDataService.swift; sourceTree = "<group>"; };
+		A2C17E1B222B204300435469 /* LFRemoteDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRemoteDataService.swift; sourceTree = "<group>"; };
+		A2C17E1E222B236000435469 /* EndpointType.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		A2C17E20222B245E00435469 /* LFAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFAPIConstants.swift; sourceTree = "<group>"; };
+		A2C17E22222B25D400435469 /* LFEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFEndpoint.swift; sourceTree = "<group>"; };
+		A2C17E24222B368700435469 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A2C17E26222B48B400435469 /* LFScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleResponse.swift; sourceTree = "<group>"; };
+		A2C17E28222B4DB400435469 /* LFToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFToken.swift; sourceTree = "<group>"; };
+		A2FDE601222C753B0014665B /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		A2FDE627222C7FF00014665B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A2FDE628222C7FF00014665B /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		A2FDE629222C7FF00014665B /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		A2FDE62A222C7FF00014665B /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		A2FDE62F222C7FF80014665B /* LFSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchRouter.swift; sourceTree = "<group>"; };
+		A2FDE630222C7FF80014665B /* LFSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchInteractor.swift; sourceTree = "<group>"; };
+		A2FDE631222C7FF80014665B /* LFSearchModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchModuleBuilder.swift; sourceTree = "<group>"; };
+		A2FDE632222C7FF80014665B /* LFSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchPresenter.swift; sourceTree = "<group>"; };
+		A2FDE633222C7FF80014665B /* LFSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchViewController.swift; sourceTree = "<group>"; };
+		A2FDE640222C85F70014665B /* LFSchedulesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSchedulesListViewController.swift; sourceTree = "<group>"; };
+		A2FDE641222C85F70014665B /* LFSchedulesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSchedulesListPresenter.swift; sourceTree = "<group>"; };
+		A2FDE642222C85F70014665B /* LFSchedulesModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSchedulesModuleBuilder.swift; sourceTree = "<group>"; };
+		A2FDE643222C85F70014665B /* LFSchedulesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSchedulesListRouter.swift; sourceTree = "<group>"; };
+		A2FDE64A222C86170014665B /* SchedulesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesPresenter.swift; sourceTree = "<group>"; };
+		A2FDE64B222C86170014665B /* SchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesView.swift; sourceTree = "<group>"; };
+		A2FDE64C222C86170014665B /* SchedulesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesRouter.swift; sourceTree = "<group>"; };
+		A2FDE655222C95180014665B /* LFScheduleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleListCell.swift; sourceTree = "<group>"; };
+		A2FDE656222C95180014665B /* LFScheduleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFScheduleListCell.xib; sourceTree = "<group>"; };
+		A2FDE659222C9C9B0014665B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A2FDE65C222CA4980014665B /* LFScheduleViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScheduleViewConstants.swift; sourceTree = "<group>"; };
+		A2FDE660222D35E00014665B /* SearchableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableItem.swift; sourceTree = "<group>"; };
+		A2FDE663222D3C6D0014665B /* LFAppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFAppCordinator.swift; sourceTree = "<group>"; };
+		A2FDE665222D421D0014665B /* SearchModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchModule.storyboard; sourceTree = "<group>"; };
+		A2FDE668222D44A10014665B /* UIstoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIstoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		A2FDE66A222D44D20014665B /* SchedulesListModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SchedulesListModule.storyboard; sourceTree = "<group>"; };
+		A2FDE66C222D648F0014665B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A2FDE66E222D66790014665B /* ErrorViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewLoadable.swift; sourceTree = "<group>"; };
+		A2FDE671222D74FD0014665B /* UIButton+Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Activity.swift"; sourceTree = "<group>"; };
+		A345FB5C8DE4154414BA62E9 /* Pods-Luftree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luftree.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luftree/Pods-Luftree.release.xcconfig"; sourceTree = "<group>"; };
+		B32A54E07D815EF2C20ACD64 /* Pods_Luftree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luftree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F54D4DB98DA308D73A96C5 /* Pods_LuftreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuftreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31F1176374492089A35E750 /* Pods-Luftree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luftree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luftree/Pods-Luftree.debug.xcconfig"; sourceTree = "<group>"; };
+		EAC9E33CA58F4219D50D4618 /* Pods-LuftreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuftreeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuftreeTests/Pods-LuftreeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2C17DD2222B127700435469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E09129C7CE3B42C0569F11 /* Pods_Luftree.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DE6222B127800435469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E871612424203C2746E3EF /* Pods_LuftreeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DF1222B127800435469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E6A20D54DF5BF36721515EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D31F1176374492089A35E750 /* Pods-Luftree.debug.xcconfig */,
+				A345FB5C8DE4154414BA62E9 /* Pods-Luftree.release.xcconfig */,
+				25DF55FFA1F00B4C28D3F17F /* Pods-LuftreeTests.debug.xcconfig */,
+				EAC9E33CA58F4219D50D4618 /* Pods-LuftreeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A21939F3223436990060A870 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				A21939E6223436830060A870 /* LFScheduleMapBuilder.swift */,
+				A21939E7223436830060A870 /* LFScheduleMapPresenter.swift */,
+				A21939E5223436830060A870 /* LFScheduleMapRouter.swift */,
+				A21939E8223436830060A870 /* LFScheduleMapViewController.swift */,
+				A21939F522343A8C0060A870 /* ScheduleMapModule.storyboard */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		A21939F4223436AE0060A870 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				A21939ED2234368F0060A870 /* ScheduleMapPresenter.swift */,
+				A21939EE223436900060A870 /* ScheduleMapRouter.swift */,
+				A21939EF223436900060A870 /* ScheduleMapViewController.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		A21939FD22343C3E0060A870 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A21939FA22343C350060A870 /* Animations.swift */,
+				A21939F922343C350060A870 /* Animator.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A2906C572237331D00E5A718 /* Data Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C5A2237357700E5A718 /* LFTokenServiceSpec.swift */,
+				A2906C5C22373C3F00E5A718 /* LFLocalDataServiceSpec.swift */,
+			);
+			path = "Data Layer Tests";
+			sourceTree = "<group>";
+		};
+		A2906C582237333100E5A718 /* Network Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Layer Tests";
+			sourceTree = "<group>";
+		};
+		A2906C592237353B00E5A718 /* Modules Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C602237420500E5A718 /* Search */,
+				A2906C5F223741FF00E5A718 /* Schedules */,
+				A2906C5E223741F500E5A718 /* Schedule Map */,
+			);
+			path = "Modules Tests";
+			sourceTree = "<group>";
+		};
+		A2906C5E223741F500E5A718 /* Schedule Map */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C652237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift */,
+			);
+			path = "Schedule Map";
+			sourceTree = "<group>";
+		};
+		A2906C5F223741FF00E5A718 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C632237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift */,
+			);
+			path = Schedules;
+			sourceTree = "<group>";
+		};
+		A2906C602237420500E5A718 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C612237421E00E5A718 /* LFSearchModuleBuilderSpec.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A2C17DCC222B127700435469 = {
+			isa = PBXGroup;
+			children = (
+				A2C17DD7222B127700435469 /* Luftree */,
+				A2C17DEC222B127800435469 /* LuftreeTests */,
+				A2C17DF7222B127800435469 /* LuftreeUITests */,
+				A2C17DD6222B127700435469 /* Products */,
+				4E6A20D54DF5BF36721515EC /* Pods */,
+				A821C07A68D025C6F982B0D7 /* Frameworks */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		A2C17DD6222B127700435469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17DD5222B127700435469 /* Luftree.app */,
+				A2C17DE9222B127800435469 /* LuftreeTests.xctest */,
+				A2C17DF4222B127800435469 /* LuftreeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2C17DD7222B127700435469 /* Luftree */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE662222D3C590014665B /* Application */,
+				A2C17E0C222B13B700435469 /* Layers */,
+				A2C17E09222B137100435469 /* Modules */,
+				A2C17E08222B136900435469 /* Resources */,
+				A2C17E07222B136400435469 /* UI */,
+				A2C17E06222B135C00435469 /* Utils */,
+				A2C17DD8222B127700435469 /* AppDelegate.swift */,
+				A2C17DDF222B127800435469 /* Assets.xcassets */,
+				A2C17DE1222B127800435469 /* LaunchScreen.storyboard */,
+				A2C17DE4222B127800435469 /* Info.plist */,
+			);
+			path = Luftree;
+			sourceTree = "<group>";
+		};
+		A2C17DEC222B127800435469 /* LuftreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2906C592237353B00E5A718 /* Modules Tests */,
+				A2906C582237333100E5A718 /* Network Layer Tests */,
+				A2906C572237331D00E5A718 /* Data Layer Tests */,
+				A2C17DEF222B127800435469 /* Info.plist */,
+			);
+			path = LuftreeTests;
+			sourceTree = "<group>";
+		};
+		A2C17DF7222B127800435469 /* LuftreeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17DF8222B127800435469 /* LuftreeUITests.swift */,
+				A2C17DFA222B127800435469 /* Info.plist */,
+			);
+			path = LuftreeUITests;
+			sourceTree = "<group>";
+		};
+		A2C17E06222B135C00435469 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E24222B368700435469 /* Date+Extensions.swift */,
+				A2B611632232B3440056FC4F /* Dictionary+Extensions.swift */,
+				A2FDE659222C9C9B0014665B /* String+Extensions.swift */,
+				A2FDE66C222D648F0014665B /* UIViewController+Extensions.swift */,
+				A2906C512235DB3800E5A718 /* UITextField+Extensions.swift */,
+				A2FDE66E222D66790014665B /* ErrorViewLoadable.swift */,
+				A2B04AEA223310CD005364A1 /* UserDefaults+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A2C17E07222B136400435469 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A21939FD22343C3E0060A870 /* Animations */,
+				A2FDE670222D74ED0014665B /* Common */,
+				A2FDE667222D448A0014665B /* Storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A2C17E08222B136900435469 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A21939D92233EF200060A870 /* airports.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A2C17E09222B137100435469 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE605222C7AB80014665B /* Schedules Map */,
+				A2FDE604222C7AB20014665B /* Schedules */,
+				A2FDE603222C7A9D0014665B /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2C17E0C222B13B700435469 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E14222B151200435469 /* Entity */,
+				A2C17E11222B143F00435469 /* Network */,
+				A2C17E0D222B13C300435469 /* Data */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		A2C17E0D222B13C300435469 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E18222B156A00435469 /* Remote */,
+				A2C17E17222B156200435469 /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A2C17E11222B143F00435469 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E12222B146500435469 /* LFNetworkService.swift */,
+				A2906C432235D4C800E5A718 /* LFNetworkError.swift */,
+				A2C17E1E222B236000435469 /* EndpointType.swift */,
+				A2FDE601222C753B0014665B /* NetworkServiceType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A2C17E14222B151200435469 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E15222B152200435469 /* LFAirport.swift */,
+				A2C17E28222B4DB400435469 /* LFToken.swift */,
+				A2C17E26222B48B400435469 /* LFScheduleResponse.swift */,
+				A2906C452235D51D00E5A718 /* Schedule.swift */,
+				A2906C472235D52500E5A718 /* Flight.swift */,
+				A2906C492235D53000E5A718 /* TotalJourney.swift */,
+				A2906C4B2235D5A100E5A718 /* Departure.swift */,
+				A2906C4D2235D5AE00E5A718 /* Arrival.swift */,
+				A2906C4F2235D60000E5A718 /* Terminal.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A2C17E17222B156200435469 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E19222B158200435469 /* LFLocalDataService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A2C17E18222B156A00435469 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				A2C17E20222B245E00435469 /* LFAPIConstants.swift */,
+				A2C17E1B222B204300435469 /* LFRemoteDataService.swift */,
+				A2B611612232A3510056FC4F /* LFTokenService.swift */,
+				A2C17E22222B25D400435469 /* LFEndpoint.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		A2FDE603222C7A9D0014665B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE639222C800D0014665B /* Implementation */,
+				A2FDE63A222C80250014665B /* Contracts */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A2FDE604222C7AB20014665B /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE649222C86070014665B /* Implementation */,
+				A2FDE652222C86240014665B /* Contracts */,
+			);
+			path = Schedules;
+			sourceTree = "<group>";
+		};
+		A2FDE605222C7AB80014665B /* Schedules Map */ = {
+			isa = PBXGroup;
+			children = (
+				A21939F3223436990060A870 /* Implementation */,
+				A21939F4223436AE0060A870 /* Contracts */,
+			);
+			path = "Schedules Map";
+			sourceTree = "<group>";
+		};
+		A2FDE639222C800D0014665B /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE631222C7FF80014665B /* LFSearchModuleBuilder.swift */,
+				A2FDE630222C7FF80014665B /* LFSearchInteractor.swift */,
+				A2FDE632222C7FF80014665B /* LFSearchPresenter.swift */,
+				A2FDE62F222C7FF80014665B /* LFSearchRouter.swift */,
+				A2FDE633222C7FF80014665B /* LFSearchViewController.swift */,
+				A2FDE665222D421D0014665B /* SearchModule.storyboard */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		A2FDE63A222C80250014665B /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE629222C7FF00014665B /* SearchInteractor.swift */,
+				A2FDE628222C7FF00014665B /* SearchPresenter.swift */,
+				A2FDE62A222C7FF00014665B /* SearchRouter.swift */,
+				A2FDE627222C7FF00014665B /* SearchViewController.swift */,
+				A2FDE660222D35E00014665B /* SearchableItem.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		A2FDE649222C86070014665B /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE65B222CA46D0014665B /* View */,
+				A2FDE642222C85F70014665B /* LFSchedulesModuleBuilder.swift */,
+				A2FDE641222C85F70014665B /* LFSchedulesListPresenter.swift */,
+				A2FDE643222C85F70014665B /* LFSchedulesListRouter.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		A2FDE652222C86240014665B /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE64A222C86170014665B /* SchedulesPresenter.swift */,
+				A2FDE64C222C86170014665B /* SchedulesRouter.swift */,
+				A2FDE64B222C86170014665B /* SchedulesView.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		A2FDE65B222CA46D0014665B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE65C222CA4980014665B /* LFScheduleViewConstants.swift */,
+				A2FDE640222C85F70014665B /* LFSchedulesListViewController.swift */,
+				A2FDE655222C95180014665B /* LFScheduleListCell.swift */,
+				A2FDE656222C95180014665B /* LFScheduleListCell.xib */,
+				A2FDE66A222D44D20014665B /* SchedulesListModule.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2FDE662222D3C590014665B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE663222D3C6D0014665B /* LFAppCordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A2FDE667222D448A0014665B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDE668222D44A10014665B /* UIstoryboard+Extensions.swift */,
+				A21939DB22342D2D0060A870 /* UINib+Extensions.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A2FDE670222D74ED0014665B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A21939DD2234308E0060A870 /* CardView.swift */,
+				A21939DF223433FE0060A870 /* ViewIdentifiable.swift */,
+				A2FDE671222D74FD0014665B /* UIButton+Activity.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A821C07A68D025C6F982B0D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B32A54E07D815EF2C20ACD64 /* Pods_Luftree.framework */,
+				D2F54D4DB98DA308D73A96C5 /* Pods_LuftreeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2C17DD4222B127700435469 /* Luftree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C17DFD222B127800435469 /* Build configuration list for PBXNativeTarget "Luftree" */;
+			buildPhases = (
+				0976D9A050D43C045FEE9EAA /* [CP] Check Pods Manifest.lock */,
+				A2C17DD1222B127700435469 /* Sources */,
+				A2C17DD2222B127700435469 /* Frameworks */,
+				A2C17DD3222B127700435469 /* Resources */,
+				120E2624E36A865A8A7EF402 /* [CP] Embed Pods Frameworks */,
+				A2C17E1D222B221E00435469 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Luftree;
+			productName = Luftree;
+			productReference = A2C17DD5222B127700435469 /* Luftree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2C17DE8222B127800435469 /* LuftreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C17E00222B127800435469 /* Build configuration list for PBXNativeTarget "LuftreeTests" */;
+			buildPhases = (
+				C62FDE594415278629885817 /* [CP] Check Pods Manifest.lock */,
+				A2C17DE5222B127800435469 /* Sources */,
+				A2C17DE6222B127800435469 /* Frameworks */,
+				A2C17DE7222B127800435469 /* Resources */,
+				CCD8E0F6C7646FDC5D5C30D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2C17DEB222B127800435469 /* PBXTargetDependency */,
+			);
+			name = LuftreeTests;
+			productName = LuftreeTests;
+			productReference = A2C17DE9222B127800435469 /* LuftreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2C17DF3222B127800435469 /* LuftreeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C17E03222B127800435469 /* Build configuration list for PBXNativeTarget "LuftreeUITests" */;
+			buildPhases = (
+				A2C17DF0222B127800435469 /* Sources */,
+				A2C17DF1222B127800435469 /* Frameworks */,
+				A2C17DF2222B127800435469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2C17DF6222B127800435469 /* PBXTargetDependency */,
+			);
+			name = LuftreeUITests;
+			productName = LuftreeUITests;
+			productReference = A2C17DF4222B127800435469 /* LuftreeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2C17DCD222B127700435469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LF;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Meseery;
+				TargetAttributes = {
+					A2C17DD4222B127700435469 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A2C17DE8222B127800435469 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = A2C17DD4222B127700435469;
+					};
+					A2C17DF3222B127800435469 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A2C17DD4222B127700435469;
+					};
+				};
+			};
+			buildConfigurationList = A2C17DD0222B127700435469 /* Build configuration list for PBXProject "Luftree" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2C17DCC222B127700435469;
+			productRefGroup = A2C17DD6222B127700435469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2C17DD4222B127700435469 /* Luftree */,
+				A2C17DE8222B127800435469 /* LuftreeTests */,
+				A2C17DF3222B127800435469 /* LuftreeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2C17DD3222B127700435469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FDE666222D421D0014665B /* SearchModule.storyboard in Resources */,
+				A21939DA2233EF200060A870 /* airports.json in Resources */,
+				A2FDE66B222D44D20014665B /* SchedulesListModule.storyboard in Resources */,
+				A2C17DE3222B127800435469 /* LaunchScreen.storyboard in Resources */,
+				A21939F622343A8C0060A870 /* ScheduleMapModule.storyboard in Resources */,
+				A2FDE658222C95180014665B /* LFScheduleListCell.xib in Resources */,
+				A2C17DE0222B127800435469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DE7222B127800435469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DF2222B127800435469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0976D9A050D43C045FEE9EAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Luftree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		120E2624E36A865A8A7EF402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Luftree/Pods-Luftree-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luftree/Pods-Luftree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C17E1D222B221E00435469 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+		C62FDE594415278629885817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuftreeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCD8E0F6C7646FDC5D5C30D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LuftreeTests/Pods-LuftreeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuftreeTests/Pods-LuftreeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2C17DD1222B127700435469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21939F2223436900060A870 /* ScheduleMapViewController.swift in Sources */,
+				A21939EB223436830060A870 /* LFScheduleMapPresenter.swift in Sources */,
+				A21939DE2234308E0060A870 /* CardView.swift in Sources */,
+				A2FDE657222C95180014665B /* LFScheduleListCell.swift in Sources */,
+				A2FDE602222C753B0014665B /* NetworkServiceType.swift in Sources */,
+				A21939EA223436830060A870 /* LFScheduleMapBuilder.swift in Sources */,
+				A2FDE65D222CA4980014665B /* LFScheduleViewConstants.swift in Sources */,
+				A2FDE664222D3C6D0014665B /* LFAppCordinator.swift in Sources */,
+				A2B04AEB223310CD005364A1 /* UserDefaults+Extensions.swift in Sources */,
+				A21939F0223436900060A870 /* ScheduleMapPresenter.swift in Sources */,
+				A2C17E21222B245E00435469 /* LFAPIConstants.swift in Sources */,
+				A21939DC22342D2D0060A870 /* UINib+Extensions.swift in Sources */,
+				A2906C462235D51D00E5A718 /* Schedule.swift in Sources */,
+				A2B611622232A3510056FC4F /* LFTokenService.swift in Sources */,
+				A21939E0223433FE0060A870 /* ViewIdentifiable.swift in Sources */,
+				A2C17E1C222B204300435469 /* LFRemoteDataService.swift in Sources */,
+				A2FDE669222D44A10014665B /* UIstoryboard+Extensions.swift in Sources */,
+				A2906C4E2235D5AE00E5A718 /* Arrival.swift in Sources */,
+				A2FDE66D222D648F0014665B /* UIViewController+Extensions.swift in Sources */,
+				A2FDE65A222C9C9B0014665B /* String+Extensions.swift in Sources */,
+				A2C17E25222B368700435469 /* Date+Extensions.swift in Sources */,
+				A2FDE62E222C7FF00014665B /* SearchRouter.swift in Sources */,
+				A2FDE636222C7FF80014665B /* LFSearchModuleBuilder.swift in Sources */,
+				A2C17E27222B48B400435469 /* LFScheduleResponse.swift in Sources */,
+				A2FDE64F222C86180014665B /* SchedulesView.swift in Sources */,
+				A2FDE64E222C86180014665B /* SchedulesPresenter.swift in Sources */,
+				A2C17DD9222B127700435469 /* AppDelegate.swift in Sources */,
+				A2FDE634222C7FF80014665B /* LFSearchRouter.swift in Sources */,
+				A2FDE646222C85F70014665B /* LFSchedulesListPresenter.swift in Sources */,
+				A2FDE638222C7FF80014665B /* LFSearchViewController.swift in Sources */,
+				A2906C502235D60000E5A718 /* Terminal.swift in Sources */,
+				A2FDE66F222D66790014665B /* ErrorViewLoadable.swift in Sources */,
+				A2906C4C2235D5A100E5A718 /* Departure.swift in Sources */,
+				A2FDE62C222C7FF00014665B /* SearchPresenter.swift in Sources */,
+				A21939FB22343C350060A870 /* Animator.swift in Sources */,
+				A2C17E1F222B236000435469 /* EndpointType.swift in Sources */,
+				A2C17E1A222B158200435469 /* LFLocalDataService.swift in Sources */,
+				A2FDE647222C85F70014665B /* LFSchedulesModuleBuilder.swift in Sources */,
+				A2906C442235D4C800E5A718 /* LFNetworkError.swift in Sources */,
+				A2B611642232B3440056FC4F /* Dictionary+Extensions.swift in Sources */,
+				A2906C4A2235D53000E5A718 /* TotalJourney.swift in Sources */,
+				A2FDE62D222C7FF00014665B /* SearchInteractor.swift in Sources */,
+				A2FDE62B222C7FF00014665B /* SearchViewController.swift in Sources */,
+				A2C17E16222B152200435469 /* LFAirport.swift in Sources */,
+				A2C17E13222B146500435469 /* LFNetworkService.swift in Sources */,
+				A2906C522235DB3800E5A718 /* UITextField+Extensions.swift in Sources */,
+				A21939E9223436830060A870 /* LFScheduleMapRouter.swift in Sources */,
+				A2FDE650222C86180014665B /* SchedulesRouter.swift in Sources */,
+				A2FDE661222D35E00014665B /* SearchableItem.swift in Sources */,
+				A2FDE645222C85F70014665B /* LFSchedulesListViewController.swift in Sources */,
+				A21939F1223436900060A870 /* ScheduleMapRouter.swift in Sources */,
+				A2C17E23222B25D400435469 /* LFEndpoint.swift in Sources */,
+				A2FDE635222C7FF80014665B /* LFSearchInteractor.swift in Sources */,
+				A21939FC22343C350060A870 /* Animations.swift in Sources */,
+				A2FDE648222C85F70014665B /* LFSchedulesListRouter.swift in Sources */,
+				A2FDE637222C7FF80014665B /* LFSearchPresenter.swift in Sources */,
+				A2FDE672222D74FD0014665B /* UIButton+Activity.swift in Sources */,
+				A2C17E29222B4DB400435469 /* LFToken.swift in Sources */,
+				A2906C482235D52500E5A718 /* Flight.swift in Sources */,
+				A21939EC223436830060A870 /* LFScheduleMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DE5222B127800435469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2906C662237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift in Sources */,
+				A2906C5D22373C3F00E5A718 /* LFLocalDataServiceSpec.swift in Sources */,
+				A2906C622237421E00E5A718 /* LFSearchModuleBuilderSpec.swift in Sources */,
+				A2906C5B2237357700E5A718 /* LFTokenServiceSpec.swift in Sources */,
+				A2906C642237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C17DF0222B127800435469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C17DF9222B127800435469 /* LuftreeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2C17DEB222B127800435469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2C17DD4222B127700435469 /* Luftree */;
+			targetProxy = A2C17DEA222B127800435469 /* PBXContainerItemProxy */;
+		};
+		A2C17DF6222B127800435469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2C17DD4222B127700435469 /* Luftree */;
+			targetProxy = A2C17DF5222B127800435469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2C17DE1222B127800435469 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C17DE2222B127800435469 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2C17DFB222B127800435469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2C17DFC222B127800435469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2C17DFE222B127800435469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31F1176374492089A35E750 /* Pods-Luftree.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = Luftree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Luftree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A2C17DFF222B127800435469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A345FB5C8DE4154414BA62E9 /* Pods-Luftree.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = Luftree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Luftree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A2C17E01222B127800435469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25DF55FFA1F00B4C28D3F17F /* Pods-LuftreeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = LuftreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.LuftreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luftree.app/Luftree";
+			};
+			name = Debug;
+		};
+		A2C17E02222B127800435469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC9E33CA58F4219D50D4618 /* Pods-LuftreeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = LuftreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.LuftreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luftree.app/Luftree";
+			};
+			name = Release;
+		};
+		A2C17E04222B127800435469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = LuftreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.LuftreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Luftree;
+			};
+			name = Debug;
+		};
+		A2C17E05222B127800435469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C5PY3HAP;
+				INFOPLIST_FILE = LuftreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.LuftreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Luftree;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2C17DD0222B127700435469 /* Build configuration list for PBXProject "Luftree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C17DFB222B127800435469 /* Debug */,
+				A2C17DFC222B127800435469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C17DFD222B127800435469 /* Build configuration list for PBXNativeTarget "Luftree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C17DFE222B127800435469 /* Debug */,
+				A2C17DFF222B127800435469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C17E00222B127800435469 /* Build configuration list for PBXNativeTarget "LuftreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C17E01222B127800435469 /* Debug */,
+				A2C17E02222B127800435469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C17E03222B127800435469 /* Build configuration list for PBXNativeTarget "LuftreeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C17E04222B127800435469 /* Debug */,
+				A2C17E05222B127800435469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2C17DCD222B127700435469 /* Project object */;
+}
