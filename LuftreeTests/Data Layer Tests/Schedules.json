@@ -1,0 +1,1026 @@
+{
+    "ScheduleResource": {
+        "Schedule": [{
+            "TotalJourney": {
+                "Duration": "PT19H52M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T09:45"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "EWR",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T14:00"
+                    },
+                    "Terminal": {
+                        "Name": "B"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 7607
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 764
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1345,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-18"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "EWR",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T20:31"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T23:37"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8570
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 739
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1345,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-18"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT23H12M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:25"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "DUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 5110
+                },
+                "Equipment": {
+                    "AircraftCode": "31B"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "DUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T11:45"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "EWR",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T15:50"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 5194
+                },
+                "Equipment": {
+                    "AircraftCode": 333,
+                    "OnBoardEquipment": {
+                        "InflightEntertainment": true,
+                        "Compartment": [{
+                            "ClassCode": "F",
+                            "ClassDesc": "FirstClass",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }, {
+                            "ClassCode": "C",
+                            "ClassDesc": "BusinessClass",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }, {
+                            "ClassCode": "E",
+                            "ClassDesc": "PremiumEconomy",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }, {
+                            "ClassCode": "Y",
+                            "ClassDesc": "Economy",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }]
+                    }
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "EWR",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T20:31"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T23:37"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8570
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 739
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT23H12M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:25"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "DUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 5110
+                },
+                "Equipment": {
+                    "AircraftCode": "31B"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "DUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T13:05"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "JFK",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T16:55"
+                    },
+                    "Terminal": {
+                        "Name": 7
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 5188
+                },
+                "Equipment": {
+                    "AircraftCode": 343,
+                    "OnBoardEquipment": {
+                        "InflightEntertainment": true,
+                        "Compartment": [{
+                            "ClassCode": "C",
+                            "ClassDesc": "BusinessClass",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }, {
+                            "ClassCode": "E",
+                            "ClassDesc": "PremiumEconomy",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }, {
+                            "ClassCode": "Y",
+                            "ClassDesc": "Economy",
+                            "FlyNet": true,
+                            "SeatPower": true,
+                            "Usb": true,
+                            "LiveTv": true
+                        }]
+                    }
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "EWR",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T20:31"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T23:37"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8570
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 739
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 135,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-15"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT17H1M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 173
+                },
+                "Equipment": {
+                    "AircraftCode": "32N"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T09:50"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T15:05"
+                    },
+                    "Terminal": {
+                        "Name": "D"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 440
+                },
+                "Equipment": {
+                    "AircraftCode": 388
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T16:30"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T17:31"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8636
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 320
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT17H57M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 173
+                },
+                "Equipment": {
+                    "AircraftCode": "32N"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T10:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "ORD",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T14:05"
+                    },
+                    "Terminal": {
+                        "Name": 5
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 430
+                },
+                "Equipment": {
+                    "AircraftCode": "74H"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "ORD",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T15:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T18:27"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 7944
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 738
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT20H1M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "MUC",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 2
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 2053
+                },
+                "Equipment": {
+                    "AircraftCode": 320
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 15,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-18"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "MUC",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T11:45"
+                    },
+                    "Terminal": {
+                        "Name": 2
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "DEN",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T15:35"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 480
+                },
+                "Equipment": {
+                    "AircraftCode": 359
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 15,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-18"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "DEN",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T17:20"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T20:31"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 7448
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 738
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 15,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-18"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT22H13M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "MUC",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 2
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 2053
+                },
+                "Equipment": {
+                    "AircraftCode": 320
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-25"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "MUC",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T11:40"
+                    },
+                    "Terminal": {
+                        "Name": 2
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T17:40"
+                    },
+                    "Terminal": {
+                        "Name": "E"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 7902
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 763
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-25"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T21:47"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T22:43"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8637
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 738
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-25"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT22H13M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 173
+                },
+                "Equipment": {
+                    "AircraftCode": "32N"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T13:50"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T19:15"
+                    },
+                    "Terminal": {
+                        "Name": "E"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 7601
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 777
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T21:47"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T22:43"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8637
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 738
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }]
+        }, {
+            "TotalJourney": {
+                "Duration": "PT22H13M"
+            },
+            "Flight": [{
+                "Departure": {
+                    "AirportCode": "TXL",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T06:30"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T07:40"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 173
+                },
+                "Equipment": {
+                    "AircraftCode": "32N"
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "FRA",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T09:50"
+                    },
+                    "Terminal": {
+                        "Name": 1
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T15:05"
+                    },
+                    "Terminal": {
+                        "Name": "D"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 440
+                },
+                "Equipment": {
+                    "AircraftCode": 388
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }, {
+                "Departure": {
+                    "AirportCode": "IAH",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T21:47"
+                    },
+                    "Terminal": {
+                        "Name": "C"
+                    }
+                },
+                "Arrival": {
+                    "AirportCode": "AUS",
+                    "ScheduledTimeLocal": {
+                        "DateTime": "2019-03-11T22:43"
+                    }
+                },
+                "MarketingCarrier": {
+                    "AirlineID": "LH",
+                    "FlightNumber": 8637
+                },
+                "OperatingCarrier": {
+                    "AirlineID": "UA"
+                },
+                "Equipment": {
+                    "AircraftCode": 738
+                },
+                "Details": {
+                    "Stops": {
+                        "StopQuantity": 0
+                    },
+                    "DaysOfOperation": 1,
+                    "DatePeriod": {
+                        "Effective": "2019-03-11",
+                        "Expiration": "2019-03-11"
+                    }
+                }
+            }]
+        }],
+        "Meta": {
+            "@Version": "1.0.0",
+            "Link": [{
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/ber\/aus\/2019-03-11?directFlights=0",
+                "@Rel": "self"
+            }, {
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/ber\/aus\/2019-03-10?directFlights=0&offset=0&limit=20",
+                "@Rel": "previousRange"
+            }, {
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/ber\/aus\/2019-03-11?directFlights=0&offset=20&limit=20",
+                "@Rel": "next"
+            }, {
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/operations\/schedules\/ber\/aus\/2019-03-11?directFlights=0&offset=0&limit=20",
+                "@Rel": "nextRange"
+            }, {
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/references\/airports\/{airportCode}",
+                "@Rel": "related"
+            }, {
+                "@Href": "https:\/\/api.lufthansa.com\/v1\/references\/aircraft\/{aircraftCode}",
+                "@Rel": "related"
+            }]
+        }
+    }
+}

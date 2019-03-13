@@ -4,7 +4,7 @@ import Nimble
 
 class LFScheduleMapModuleBuilderSpec: QuickSpec {
     override func spec() {
-        context("Testing Schedule MAp Module Builder") {
+        context("[UT]: Testing Schedule MAp Module Builder") {
             describe("Should build module successfully") {
                 let dummyDependency = Schedule(totalJourney: nil, flights: nil)
                 let view = LFScheduleMapBuilder.build(with: dummyDependency) as? ScheduleMapView

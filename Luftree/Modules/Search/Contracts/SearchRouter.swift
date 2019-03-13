@@ -6,9 +6,10 @@
 //  Copyright © 2019 Meseery. All rights reserved.
 //
 
-import Foundation
+import UIKit.UIViewController
 
 protocol SearchRouter {
     var presenter: SearchPresenter? { get set }
+    var view: UIViewController? { get set }
     func navigateToSchedules(with schedules: [Schedule])
 }

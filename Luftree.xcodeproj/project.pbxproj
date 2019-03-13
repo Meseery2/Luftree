@@ -23,6 +23,9 @@
 		A21939F622343A8C0060A870 /* ScheduleMapModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21939F522343A8C0060A870 /* ScheduleMapModule.storyboard */; };
 		A21939FB22343C350060A870 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939F922343C350060A870 /* Animator.swift */; };
 		A21939FC22343C350060A870 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21939FA22343C350060A870 /* Animations.swift */; };
+		A25087792238824500D36417 /* LFRemoteDataServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25087782238824500D36417 /* LFRemoteDataServiceSpec.swift */; };
+		A250877B223882FC00D36417 /* LFRemoteDataServiceMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250877A223882FC00D36417 /* LFRemoteDataServiceMocks.swift */; };
+		A250877D223885BC00D36417 /* Schedules.json in Resources */ = {isa = PBXBuildFile; fileRef = A250877C223885BC00D36417 /* Schedules.json */; };
 		A2906C442235D4C800E5A718 /* LFNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C432235D4C800E5A718 /* LFNetworkError.swift */; };
 		A2906C462235D51D00E5A718 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C452235D51D00E5A718 /* Schedule.swift */; };
 		A2906C482235D52500E5A718 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906C472235D52500E5A718 /* Flight.swift */; };
@@ -117,6 +120,9 @@
 		A21939F522343A8C0060A870 /* ScheduleMapModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleMapModule.storyboard; sourceTree = "<group>"; };
 		A21939F922343C350060A870 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		A21939FA22343C350060A870 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		A25087782238824500D36417 /* LFRemoteDataServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRemoteDataServiceSpec.swift; sourceTree = "<group>"; };
+		A250877A223882FC00D36417 /* LFRemoteDataServiceMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRemoteDataServiceMocks.swift; sourceTree = "<group>"; };
+		A250877C223885BC00D36417 /* Schedules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Schedules.json; sourceTree = "<group>"; };
 		A2906C432235D4C800E5A718 /* LFNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFNetworkError.swift; sourceTree = "<group>"; };
 		A2906C452235D51D00E5A718 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A2906C472235D52500E5A718 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
@@ -263,15 +269,11 @@
 			children = (
 				A2906C5A2237357700E5A718 /* LFTokenServiceSpec.swift */,
 				A2906C5C22373C3F00E5A718 /* LFLocalDataServiceSpec.swift */,
+				A25087782238824500D36417 /* LFRemoteDataServiceSpec.swift */,
+				A250877A223882FC00D36417 /* LFRemoteDataServiceMocks.swift */,
+				A250877C223885BC00D36417 /* Schedules.json */,
 			);
 			path = "Data Layer Tests";
-			sourceTree = "<group>";
-		};
-		A2906C582237333100E5A718 /* Network Layer Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Network Layer Tests";
 			sourceTree = "<group>";
 		};
 		A2906C592237353B00E5A718 /* Modules Tests */ = {
@@ -341,7 +343,6 @@
 				A2C17E08222B136900435469 /* Resources */,
 				A2C17E07222B136400435469 /* UI */,
 				A2C17E06222B135C00435469 /* Utils */,
-				A2C17DD8222B127700435469 /* AppDelegate.swift */,
 				A2C17DDF222B127800435469 /* Assets.xcassets */,
 				A2C17DE1222B127800435469 /* LaunchScreen.storyboard */,
 				A2C17DE4222B127800435469 /* Info.plist */,
@@ -353,7 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				A2906C592237353B00E5A718 /* Modules Tests */,
-				A2906C582237333100E5A718 /* Network Layer Tests */,
 				A2906C572237331D00E5A718 /* Data Layer Tests */,
 				A2C17DEF222B127800435469 /* Info.plist */,
 			);
@@ -565,6 +565,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FDE663222D3C6D0014665B /* LFAppCordinator.swift */,
+				A2C17DD8222B127700435469 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -722,6 +723,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A250877D223885BC00D36417 /* Schedules.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -899,7 +901,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2906C662237425100E5A718 /* LFScheduleMapModuleBuilderSpec.swift in Sources */,
+				A25087792238824500D36417 /* LFRemoteDataServiceSpec.swift in Sources */,
 				A2906C5D22373C3F00E5A718 /* LFLocalDataServiceSpec.swift in Sources */,
+				A250877B223882FC00D36417 /* LFRemoteDataServiceMocks.swift in Sources */,
 				A2906C622237421E00E5A718 /* LFSearchModuleBuilderSpec.swift in Sources */,
 				A2906C5B2237357700E5A718 /* LFTokenServiceSpec.swift in Sources */,
 				A2906C642237423500E5A718 /* LFSchedulesModuleBuilderSpec.swift in Sources */,

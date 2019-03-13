@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,17 +50,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="departure" translatesAutoresizingMaskIntoConstraints="NO" id="WRf-45-5Sb">
-                                <rect key="frame" x="8" y="0.0" width="36" height="36"/>
+                                <rect key="frame" x="8" y="3" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="CAu-Ks-Auh"/>
-                                    <constraint firstAttribute="width" constant="36" id="W80-ni-00m"/>
+                                    <constraint firstAttribute="height" constant="30" id="CAu-Ks-Auh"/>
+                                    <constraint firstAttribute="width" constant="30" id="W80-ni-00m"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrival" translatesAutoresizingMaskIntoConstraints="NO" id="u4K-us-bgA">
-                                <rect key="frame" x="8" y="44" width="36" height="36"/>
+                                <rect key="frame" x="8" y="47" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="34Z-KV-dPv"/>
-                                    <constraint firstAttribute="height" constant="36" id="91x-2o-zI5"/>
+                                    <constraint firstAttribute="width" constant="30" id="34Z-KV-dPv"/>
+                                    <constraint firstAttribute="height" constant="30" id="91x-2o-zI5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBr-fu-Hh0">
@@ -83,19 +84,19 @@
                             <constraint firstItem="lBr-fu-Hh0" firstAttribute="centerY" secondItem="Piy-YB-QS4" secondAttribute="centerY" id="9t6-Bv-Oiy"/>
                             <constraint firstItem="lBr-fu-Hh0" firstAttribute="leading" secondItem="Piy-YB-QS4" secondAttribute="trailing" constant="58" id="CcD-OC-jgg"/>
                             <constraint firstItem="YTP-T1-0P5" firstAttribute="leading" secondItem="WGs-Wk-4Zn" secondAttribute="trailing" constant="58" id="IL7-pa-LTx"/>
-                            <constraint firstItem="u4K-us-bgA" firstAttribute="top" secondItem="WRf-45-5Sb" secondAttribute="bottom" constant="8" id="J2A-3r-wzd"/>
+                            <constraint firstItem="u4K-us-bgA" firstAttribute="top" secondItem="WRf-45-5Sb" secondAttribute="bottom" constant="14" id="J2A-3r-wzd"/>
                             <constraint firstItem="Piy-YB-QS4" firstAttribute="top" secondItem="9Aq-3v-xkz" secondAttribute="bottom" constant="3" id="JmF-wm-cft"/>
-                            <constraint firstItem="WGs-Wk-4Zn" firstAttribute="height" secondItem="WRf-45-5Sb" secondAttribute="height" id="OiF-lb-6Ip"/>
+                            <constraint firstItem="WGs-Wk-4Zn" firstAttribute="height" secondItem="WRf-45-5Sb" secondAttribute="height" constant="6" id="OiF-lb-6Ip"/>
                             <constraint firstAttribute="trailing" secondItem="lBr-fu-Hh0" secondAttribute="trailing" constant="8" id="Q3B-y9-zq7"/>
                             <constraint firstAttribute="trailing" secondItem="YTP-T1-0P5" secondAttribute="trailing" constant="8" id="X7f-Qc-jT6"/>
-                            <constraint firstItem="WRf-45-5Sb" firstAttribute="top" secondItem="LLW-AG-EBU" secondAttribute="top" id="Yc0-Z1-ElK"/>
+                            <constraint firstItem="WRf-45-5Sb" firstAttribute="top" secondItem="LLW-AG-EBU" secondAttribute="top" constant="3" id="Yc0-Z1-ElK"/>
                             <constraint firstItem="9Aq-3v-xkz" firstAttribute="top" secondItem="WGs-Wk-4Zn" secondAttribute="bottom" constant="4" id="a5l-Nx-ihF"/>
-                            <constraint firstItem="WGs-Wk-4Zn" firstAttribute="leading" secondItem="WRf-45-5Sb" secondAttribute="trailing" constant="24" id="gm8-Ym-7Hb"/>
-                            <constraint firstItem="Piy-YB-QS4" firstAttribute="leading" secondItem="u4K-us-bgA" secondAttribute="trailing" constant="24" id="hN0-f8-zh7"/>
+                            <constraint firstItem="WGs-Wk-4Zn" firstAttribute="leading" secondItem="WRf-45-5Sb" secondAttribute="trailing" constant="30" id="gm8-Ym-7Hb"/>
+                            <constraint firstItem="Piy-YB-QS4" firstAttribute="leading" secondItem="u4K-us-bgA" secondAttribute="trailing" constant="30" id="hN0-f8-zh7"/>
                             <constraint firstItem="WRf-45-5Sb" firstAttribute="leading" secondItem="LLW-AG-EBU" secondAttribute="leading" constant="8" id="ixw-2Q-5ws"/>
                             <constraint firstItem="Piy-YB-QS4" firstAttribute="centerY" secondItem="u4K-us-bgA" secondAttribute="centerY" id="jhk-hN-Xhs"/>
                             <constraint firstItem="YTP-T1-0P5" firstAttribute="centerY" secondItem="WGs-Wk-4Zn" secondAttribute="centerY" id="kdo-U8-khl"/>
-                            <constraint firstItem="Piy-YB-QS4" firstAttribute="height" secondItem="u4K-us-bgA" secondAttribute="height" id="nnd-Hg-l0A"/>
+                            <constraint firstItem="Piy-YB-QS4" firstAttribute="height" secondItem="u4K-us-bgA" secondAttribute="height" constant="6" id="nnd-Hg-l0A"/>
                             <constraint firstItem="9Aq-3v-xkz" firstAttribute="leading" secondItem="WGs-Wk-4Zn" secondAttribute="leading" id="sKR-Ub-Icq"/>
                             <constraint firstItem="u4K-us-bgA" firstAttribute="leading" secondItem="LLW-AG-EBU" secondAttribute="leading" constant="8" id="sfR-IL-FdJ"/>
                         </constraints>

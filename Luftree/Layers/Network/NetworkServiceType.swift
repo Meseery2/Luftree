@@ -9,13 +9,8 @@
 import Foundation
 
 protocol NetworkServiceType {
+    var extraHeaders: [String: String]? { get set }
     func getEntity<T: Codable>(
         forEndpoint endpoint: EndpointType,
         onCompletion: @escaping CompletionClosure<T>)
-
-    func getEntities<T: Codable>(
-        forEndpoint endpoint: EndpointType,
-        onCompletion: @escaping CompletionClosure<[T]>)
-
-    var extraHeaders: [String: String]? { get set }
 }

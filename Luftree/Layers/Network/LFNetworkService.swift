@@ -47,26 +47,6 @@ class LFNetworkService: NetworkServiceType {
         }
     }
 
-    func getEntities<T: Codable>(forEndpoint endpoint: EndpointType,
-                                 onCompletion: @escaping (Result<[T], NetworkError>) -> Void) {
-        execute(endpoint: endpoint) { (result) in
-            switch result {
-            case let .success(data):
-                do {
-                    let entities = try JSONDecoder().decode([T].self, from: data)
-                    onCompletion(.success(entities))
-                } catch {
-                    if error is DecodingError {
-                        onCompletion(
-                            .failure(NetworkError.parsingError))
-                    }
-                }
-            case let .failure(error):
-                onCompletion(.failure(error))
-            }
-        }
-    }
-
     private func execute(endpoint: EndpointType,
                          onCompletion: @escaping (Result<Data, NetworkError>) -> Void) {
             guard NetworkReachabilityManager()!.isReachable else {
