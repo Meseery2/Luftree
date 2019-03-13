@@ -4,7 +4,7 @@ import Nimble
 
 class LFSchedulesModuleBuilderSpec: QuickSpec {
     override func spec() {
-        context("Testing Schdeules Module Builder") {
+        context("[UT]: Testing Schdeules Module Builder") {
             describe("Should build module successfully") {
                 let view = LFSchedulesModuleBuilder.build(with: []) as? SchedulesView
                 expect(view)

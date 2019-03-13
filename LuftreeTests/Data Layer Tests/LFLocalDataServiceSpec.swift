@@ -11,7 +11,7 @@ class LFLocalDataServiceSpec: QuickSpec {
 
             LFAirport(name: "Airport3", iata: "AI3", city: "Shtuttgart", lat: "15,9878", lon: "129,178")]
         let localDataService = LFLocalDataService(airportsDependency)
-        context("Testing Local Data Service") {
+        context("[UT]: Testing Local Data Service") {
             describe("On Search for airports") {
                 it("Should fetch valid airports") {
                     let airports = try? localDataService.search(with: "Ber")

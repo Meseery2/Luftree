@@ -4,7 +4,7 @@ import Nimble
 
 class LFSearchModuleBuilderSpec: QuickSpec {
     override func spec() {
-        context("Testing Search Module Builder") {
+        context("[UT]: Testing Search Module Builder") {
             describe("Should build module successfully") {
                     let navigationViewController = LFSearchModuleBuilder.build() as? UINavigationController
                     let view = navigationViewController?.topViewController as? SearchViewController
