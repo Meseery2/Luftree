@@ -1,11 +1,3 @@
-//
-//  LFAirport.swift
-//  Luftree
-//
-//  Created by Mohamed EL Meseery on 3/10/19.
-//  Copyright © 2019 Meseery. All rights reserved.
-//
-
 import CoreLocation.CLLocation
 
 struct LFAirport: Codable {
